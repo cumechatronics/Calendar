@@ -322,12 +322,7 @@ export function getStubConfig(hass: Record<string, { state: string }>): Record<s
     _description: !calendarEntity
       ? 'A calendar card that displays events from multiple calendars with individual styling. Add a calendar integration to Home Assistant to use this card.'
       : undefined,
-  };
-}
-  // Cache and refresh settings
-  refresh_interval: Constants.CACHE.DEFAULT_DATA_REFRESH_MINUTES,
-  refresh_on_navigate: true,
-
+  }
   // Pattern matching for event customization
   patterns: [], // Array of Pattern objects: pattern, regex, icon, color, label, priority, matchField
 };
