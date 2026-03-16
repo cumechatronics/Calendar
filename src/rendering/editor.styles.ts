@@ -4,6 +4,9 @@
  */
 
 import { css } from 'lit';
+import patternService from '../services/patternService';
+import type { Pattern } from '../utils/patternMatcher';
+
 
 export default css`
   ha-textfield,
