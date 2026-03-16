@@ -1,3 +1,4 @@
+// src/utils/patternMatcher.ts
 export type Pattern = {
   pattern: string;
   regex?: boolean;
@@ -23,7 +24,7 @@ export class PatternMatcher {
   }
 
   public setPatterns(patterns: Pattern[]) {
-    this.patterns = patterns.slice().sort((a, b) => (b.priority || 0) - (a.priority || 0));
+    this.patterns = (patterns || []).slice().sort((a, b) => (b.priority || 0) - (a.priority || 0));
   }
 
   private buildRegex(p: Pattern): RegExp {
