@@ -324,3 +324,11 @@ export function getStubConfig(hass: Record<string, { state: string }>): Record<s
       : undefined,
   };
 }
+  // Cache and refresh settings
+  refresh_interval: Constants.CACHE.DEFAULT_DATA_REFRESH_MINUTES,
+  refresh_on_navigate: true,
+
+  // Pattern matching for event customization
+  patterns: [], // Array of Pattern objects: pattern, regex, icon, color, label, priority, matchField
+};
+
