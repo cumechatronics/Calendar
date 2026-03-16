@@ -556,6 +556,7 @@ export interface CalendarEventData {
   _entityLabel?: string;
   _isEmptyDay?: boolean;
   _matchedConfig?: EntityConfig;
+  _matchedPattern?: Pattern;
   time?: string;
 }
 
